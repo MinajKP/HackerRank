@@ -1,0 +1,17 @@
+using System;
+
+class Solution {
+    static void Main(String[] args) {
+        // Declare a variable named 'inputString' to hold our input.
+        String inputString; 
+        
+        // Read and save our input in the variable inputString.
+        inputString = Console.ReadLine(); 
+        
+        // Print "Hello, World."
+        Console.WriteLine("Hello, World.");
+        
+        // Output the the String via Console.WriteLine();
+        Console.WriteLine(inputString);
+    }
+}
