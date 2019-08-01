@@ -1,0 +1,50 @@
+using System;
+
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var bob = Console.ReadLine().Split(' ');
+            var b1 = int.Parse(bob[0]);
+            var b2 = int.Parse(bob[1]);
+            var b3 = int.Parse(bob[2]);
+
+            var Alice = Console.ReadLine().Split(' ');
+            var a1 = int.Parse(Alice[0]);
+            var a2 = int.Parse(Alice[1]);
+            var a3 = int.Parse(Alice[2]);
+
+            int aliceScore = 0;
+            int bobScore = 0;
+
+            if (b1 > a1)
+            {
+                aliceScore++;
+            }
+            else if (a1 > b1)
+            {
+                bobScore++;
+            }
+
+            if(b2 > a2)
+            {
+                aliceScore++;
+            }
+            else if(a2 > b2)
+            {
+                bobScore++;
+            }
+
+            if(b3 > a3)
+            {
+                aliceScore++;
+            }
+            else if (a3 > b3)
+            {
+                bobScore++;
+            }
+
+            Console.WriteLine(aliceScore +" " +bobScore);
+        }
+    }
