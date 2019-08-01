@@ -1,0 +1,12 @@
+using System;
+using System.Linq;
+class Solution
+{
+    static void Main(String[] args)
+    {   
+        Console.ReadLine();
+        var myArray = Console.ReadLine().Split(' ');
+        var array = Array.ConvertAll(myArray, Int32.Parse);
+        Console.WriteLine(array.Sum()); 
+    }
+}
