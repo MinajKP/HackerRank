@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class triplet {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 Scanner scanner = new Scanner(System.in);
+	        int a1 = scanner.nextInt();
+	        int a2 = scanner.nextInt();
+	        int a3 = scanner.nextInt();
+	        int b1 = scanner.nextInt();
+	        int b2 = scanner.nextInt();
+	        int b3 = scanner.nextInt();
+	        
+	        int alice = ((a1 > b1)?1:0) + ((a2 > b2)?1:0) + ((a3 > b3)?1:0);
+	        int bob = ((b1 > a1)?1:0) + ((b2 > a2)?1:0) + ((b3 > a3)?1:0);
+ 
+	        System.out.println(alice + " " + bob);
+	}
+
+}
