@@ -1,0 +1,18 @@
+using System;
+
+class Solution
+{
+    static void Main(String[] args)
+    {
+        Console.ReadLine();
+
+        var input = Console.ReadLine();
+        var x = input.Split(' ');
+
+        Array.Reverse(x);
+
+        foreach (var arr in x)
+        {
+            Console.Write($"{arr} ");
+        }
+    }
